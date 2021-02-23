@@ -1,0 +1,395 @@
+@font-face{
+    font-family: "mono";
+    src: url(../font/Ibmplexmono.woff);
+}
+@font-face{
+    font-family: "Manro";
+    src: url(../font/Manroperegular.woff);
+}
+:root{
+    font-family: "mono";
+}
+body{
+    font-family: "Manro";
+    color: whitesmoke;
+    background-color: black;
+}
+
+button{
+    font-family: "mono",cursive;
+}
+
+/* header */
+video{
+    width: 100%;
+    z-index: -1;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    opacity: .3;
+}
+header{
+    z-index: 1;
+}
+nav{
+    display: flex;
+    padding-top:29px;
+    font-family: "mono";
+    margin: auto 40px;
+    justify-content: space-between;
+    
+}
+a{
+    text-decoration: none;
+    color: blueviolet;
+}
+a:active{
+    color: rgba(148, 0, 255, 1);
+}
+nav ul{
+    display: flex;
+    align-items: center;
+    font-size: 13px;
+}
+nav ul li{
+    margin:0px 40px ;
+}
+nav ul li a{
+    color: whitesmoke;
+}
+nav ul li a::after{
+    content: '';
+    display: block;
+    margin-left: auto;
+    height: 2px;
+    border-bottom:2px solid rgba(148, 0, 255, 1);
+    border-radius: 15px;
+    width: 0%;
+    transition: 0.2s linear;
+}
+nav ul li a:hover::after{
+    width: 100%;
+}
+/* button */
+nav button{
+    background-color: rgba(148, 0, 255, 1);
+    border-radius: 15px;
+    border: none;
+    text-decoration: none;
+    cursor: pointer;
+    outline:none;
+    max-width: 91px;
+    width: 100%;
+    text-align: center;
+    color: whitesmoke;
+    padding: 4px 17px;
+}
+button:hover{
+    opacity: 0.6;
+    transition: 0.6s;
+}
+button:active,#intro button:active,#two button:active,.dog div button:active ,#dog div button:active{
+    cursor:progress;
+}
+/* first page */
+#intro div, #intro div:nth-child(1){
+    margin: 143px 0px 0px 98px ;
+}
+#intro div:nth-child(2){
+    margin-top: 14px;
+    display: block;
+    font-size: 48px;
+    max-width: 650px;
+    width: 100%;
+    line-height: 1.25;
+    
+}
+#intro button{
+    margin: 58px 0px 0px 98px;
+    background-color: rgba(148, 0, 255, 1);
+    border-radius: 25px;
+    border: none;
+    text-decoration: none;
+    cursor: pointer;
+    outline:none;
+    color: whitesmoke;
+    text-align: center;
+    padding: 15px 42px;
+}
+.text{
+    display: flex;
+}
+.text div {
+    max-width: 200px;
+    width: 100%;
+    margin: 133px 0px 0px 98px;
+}
+.text div p:nth-child(1){
+    line-height: 3.5;
+}
+.text div p:nth-child(2){
+    line-height: 1.5;
+    margin-bottom: 550px;
+}
+/* two page */
+#two{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    
+}
+#two div:first-child{
+    margin: 348px 0px 0px 113px;
+}
+#two div:nth-child(2){
+    margin-top:101px ;
+}
+#two div p:nth-child(1){
+    font-size: 48px;
+}
+#two div ul{
+    margin: 22px 0px 0px 30px;
+    line-height: 2;
+}
+#two button{
+    margin-top:55px;
+    background-color: rgba(148, 0, 255, 1);
+    border-radius: 25px;
+    border: none;
+    text-decoration: none;
+    cursor: pointer;
+    outline:none;
+    color: whitesmoke;
+    text-align: center;
+    padding: 15px 42px;
+}
+.icons{
+    padding-top: 147px;
+    text-align: center;
+    font-size: 29px;
+}
+.icons div img{
+    margin-top: 30px;
+}
+.flex  {
+    display: flex;
+    justify-content: space-between;
+    margin: 64px 245px 0px 245px ;
+}
+.flex div p{
+    font-size: 16px;
+    color: rgba(153, 153, 153, 1);
+    margin-bottom: 20px
+}
+
+.flex div ul li{
+    font-size: 14px;
+    line-height: 1.25;
+}
+details{
+    display: none;
+}
+#dog{
+    padding: 194px auto;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    font-size: 29px;
+}
+#dog div p:nth-child(2){
+    margin-top:35px ;
+    line-height: 1.5;
+}
+#dog div button{
+    margin-top:26px ;
+    background-color: rgba(148, 0, 255, 1);
+    border-radius: 25px;
+    border: none;
+    text-decoration: none;
+    cursor: pointer;
+    outline:none;
+    color: whitesmoke;
+    text-align: center;
+    padding: 15px 42px;
+}
+footer{
+    display:flex;
+    flex-flow: column wrap;
+   margin-top: 222px;
+   background-image: url(../img/footer.png);
+   background-size: cover;
+}
+footer div:nth-child(1){
+    justify-content: center;
+    font-size: 18px;
+    padding:106px 0px 24px 0px;
+}
+footer div p:nth-child(1){
+    font-size: 51px;
+    margin-bottom: 32px;
+}
+footer div p{
+    display: flex;
+    justify-content: center;
+}
+footer div div button{
+    background-color: rgba(148, 0, 255, 1);
+    border-radius: 45px;
+    border: none;
+    text-decoration: none;
+    cursor: pointer;
+    outline:none;
+    text-align: center;
+    color: whitesmoke;
+    padding: 15px 42px;
+    margin: 42px 0px 117px 0px ;
+}
+footer div div{
+    display: flex;
+    justify-content: center;
+}
+footer div:nth-child(2){
+    background-color: black;
+}
+footer div:nth-child(2) p{
+    padding-bottom: 32px;
+}
+@media(max-width:1218px){
+    .icons div img{
+        max-width: 1000px;
+        width: 100%;
+    }
+    .text div p:nth-child(2){
+        margin-bottom: 150px;
+    }
+
+}
+@media(max-width:1024px){
+    .flex {
+        display: grid;
+        grid-template-columns: repeat(auto-fill,minmax(150px,1fr));
+        
+    }
+    #intro div {
+        margin: 0px 0px 0px 0px ;
+    }
+    #intro {
+        display: flex;
+        flex-flow: column wrap;
+        justify-content: center;
+        text-align: center;
+    }
+    #intro div:nth-child(2){
+        max-width:100%;
+    }
+    #intro button {
+        margin: 58px auto 300px ;
+        max-width: 320px ;
+    }
+}
+@media  (max-width:900px) {
+    video {
+        width: 0%;
+    }
+    #two{
+        display: flex;
+        flex-flow: column-reverse wrap;
+        align-content: center;
+    }
+    nav ul li a:hover::after{
+        width: 0%;
+    }
+    #dog{
+        display: flex;
+        flex-flow: column wrap;
+        font-size: 20px;
+        align-content: center;
+        padding: auto;
+    }
+    .icons div img{
+        max-width: 500px;
+        width: 100%;
+    }
+    .text {
+        display:grid;
+        grid-template-columns:repeat(auto-fill,minmax(300px,1fr));
+    }
+    #dog div img{
+        max-width: 300px;
+        width: 100%;
+    }
+    #dog p,#dog button {
+        margin: auto 30px;
+    }
+
+}
+@media(max-width:750px){
+    footer div p:nth-child(1) {
+        font-size: 24px;
+    }
+    .icons p,#dog {
+        font-size: 16px;
+    
+    }
+    #two div:nth-child(2) img{
+        max-width: 320px;
+    }
+    nav ul li{
+        margin:auto ;
+    }
+    .flex{
+    margin:auto ;
+    }
+    .flex div{
+        display: none;
+    }
+    details{
+        display: flex;
+        font-size: 16px;
+    }
+    summary{
+        opacity: 0.6;
+        margin: 20px;
+    }
+    details ul li{
+        margin: 5px;
+    }
+    summary::-webkit-details-marker {
+       display: none; 
+    }
+    summary:hover ,summary:active ,summary:focus , details:focus ,details:active ,details:hover{
+        outline: 0;
+        outline-offset: 0;
+    }
+
+    #dog{
+        padding: auto;
+    }
+    #two div:first-child{
+        margin:30px  auto;
+    }
+    nav ul{
+        display: none;
+    }
+    nav{
+        margin: auto 10px auto 20px;
+    }
+}
+@media(max-width:500px){
+    #intro , .text{
+        display: none;
+    }
+    
+    #intro div, #intro div:nth-child(1){
+        margin: 30px auto;
+    }
+    #intro div:nth-child(2){
+        font-size: 16px;
+    }
+    footer div p:nth-child(2){
+        line-height: 2;
+    }
+}
+
+
+
+
